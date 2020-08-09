@@ -38,6 +38,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
     />
   ) : null;
 
+  console;
   const barChart = confirmed ? (
     <Bar
       data={{
@@ -50,7 +51,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
               'rgba(0, 255, 0, 0.5)',
               'rgba(177, 40, 40, 0.5)',
             ],
-            data: [confirmed.value, recovered.value, deaths.value],
+            data: [confirmed, recovered, deaths],
           },
         ],
       }}
